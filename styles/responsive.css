@@ -196,14 +196,14 @@
     left: 0;
     top: auto;
     -webkit-transform: unset;
-            transform: unset;
+    transform: unset;
     bottom: 0;
   }
   .testimonials .owl-nav .owl-next {
     right: 0;
     top: auto;
     -webkit-transform: unset;
-            transform: unset;
+    transform: unset;
     bottom: 0;
   }
   .testimonials span {
@@ -520,7 +520,14 @@
     padding: 0;
     padding-top: 30px;
   }
-  .product-details-area .products-details-tab .tab_content .tabs_item .products-details-tab-content .product-review-form .review-comments .review-item {
+  .product-details-area
+    .products-details-tab
+    .tab_content
+    .tabs_item
+    .products-details-tab-content
+    .product-review-form
+    .review-comments
+    .review-item {
     padding-right: 0;
   }
   .portfolio-details-content .portfolio-top-content .news-content h3 {
@@ -627,11 +634,12 @@
   .banner-area.banner-area-five .banner-content {
     margin-top: 0;
   }
-  .testimonials .owl-theme .owl-nav .owl-prev, .testimonials .owl-theme .owl-nav .owl-next {
+  .testimonials .owl-theme .owl-nav .owl-prev,
+  .testimonials .owl-theme .owl-nav .owl-next {
     left: 0;
     top: auto;
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   .testimonials .owl-theme .owl-nav .owl-next {
     right: 0;
@@ -642,7 +650,7 @@
   }
   .navbar-area .main-nav .navbar .navbar-collapse {
     padding: 10px 15px;
-    background: #232323;
+    background: #002d62;
     margin-top: 10px;
     overflow-y: auto;
     max-height: 70vh;
@@ -657,7 +665,10 @@
   .navbar-area .main-nav .navbar .navbar-collapse::-webkit-scrollbar-thumb {
     background: #e21f36;
   }
-  .navbar-area .main-nav .navbar .navbar-collapse::-webkit-scrollbar-thumb:hover {
+  .navbar-area
+    .main-nav
+    .navbar
+    .navbar-collapse::-webkit-scrollbar-thumb:hover {
     background: #e21f36;
   }
   .navbar-area .main-nav .navbar .navbar-nav .nav-item a {
@@ -682,7 +693,14 @@
     font-size: 14px;
     padding: 10px 15px;
   }
-  .navbar-area .main-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu {
+  .navbar-area
+    .main-nav
+    .navbar
+    .navbar-nav
+    .nav-item
+    .dropdown-menu
+    li
+    .dropdown-menu {
     left: 15px !important;
     right: 0 !important;
     top: 0 !important;
@@ -711,7 +729,12 @@
     background: #fff;
     border-top: 1px solid #eee;
   }
-  .navbar-area.navbar-area-two .main-nav .navbar .navbar-nav .nav-item .dropdown-menu {
+  .navbar-area.navbar-area-two
+    .main-nav
+    .navbar
+    .navbar-nav
+    .nav-item
+    .dropdown-menu {
     border-left: 1px dashed #eeeeee;
   }
   .navbar-area.navbar-area-two .navbar-toggler .icon-bar {
@@ -739,7 +762,8 @@
 
 /* Max width 767px */
 @media only screen and (max-width: 575px) {
-  .top-header-four .header-right-content, .top-header .header-right-content {
+  .top-header-four .header-right-content,
+  .top-header .header-right-content {
     margin-top: 10px;
   }
 }
@@ -1121,14 +1145,14 @@
     left: 0;
     top: auto;
     -webkit-transform: unset;
-            transform: unset;
+    transform: unset;
     bottom: 0;
   }
   .testimonials .owl-nav .owl-next {
     right: 0;
     top: auto;
     -webkit-transform: unset;
-            transform: unset;
+    transform: unset;
     bottom: 0;
   }
   .banner-video {
@@ -1160,11 +1184,12 @@
   .banner-area.banner-area-five .banner-content {
     margin-top: 0;
   }
-  .testimonials .owl-theme .owl-nav .owl-prev, .testimonials .owl-theme .owl-nav .owl-next {
+  .testimonials .owl-theme .owl-nav .owl-prev,
+  .testimonials .owl-theme .owl-nav .owl-next {
     left: 0;
     top: auto;
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   .testimonials .owl-theme .owl-nav .owl-next {
     right: 0;
@@ -1252,8 +1277,8 @@
   }
   .our-approach-area .row {
     -webkit-box-align: normal !important;
-        -ms-flex-align: normal !important;
-            align-items: normal !important;
+    -ms-flex-align: normal !important;
+    align-items: normal !important;
   }
   .approach-img {
     background-image: url(/images/approach-img.jpg);
@@ -1308,8 +1333,8 @@
   }
   .about-us-area .row {
     -webkit-box-align: unset !important;
-        -ms-flex-align: unset !important;
-            align-items: unset !important;
+    -ms-flex-align: unset !important;
+    align-items: unset !important;
   }
   .about-content {
     margin-left: 0;
