@@ -564,7 +564,9 @@ Navbar Area Style
   font-size: 0;
   padding: 0;
 }
-
+.navbar-area .main-nav .navbar .navbar-brand img {
+  max-width: 200px;
+}
 .navbar-area .main-nav nav .navbar-nav .nav-item {
   position: relative;
   padding: 0 0;
@@ -811,12 +813,6 @@ Navbar Area Style
   opacity: 1;
   visibility: visible;
   margin-top: 0;
-}
-
-.navbar-area .others-option .get-quote {
-  display: inline-block;
-  position: relative;
-  top: 3px;
 }
 
 .navbar-area .others-option .cart-icon {
@@ -1085,9 +1081,7 @@ Mobile Navbar Area Style
   .mobile-nav nav .navbar-nav .nav-item a i {
     display: none;
   }
-  .navbar-area .others-option .get-quote {
-    top: 4.5px;
-  }
+
   .navbar-area .others-option .cart-icon {
     margin-right: 10px;
     margin-left: 20px;

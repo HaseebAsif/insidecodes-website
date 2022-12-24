@@ -5,7 +5,7 @@ import Solution from "../components/HomeDemoThree/Solution";
 import PriceTableTwo from "../components/Common/PriceTableTwo";
 import WhyChooseUs from "../components/HomeDemoThree/WhyChooseUs";
 import FaqSection from "../components/HomeDemoThree/FaqSection";
-import PartnersTwo from "../components/Common/PartnersTwo";
+import Partners from "../components/Common/Partners";
 import LatestNews from "../components/Common/LatestNews";
 import Footer from "../components/_App/Footer";
 import Navbar from "../components/_App/Navbar";
@@ -20,7 +20,7 @@ const Index = () => {
         <Navbar />
         <MainBanner />
         <Features />
-        <PartnersTwo />
+        <Partners />
         <Services />
         <TeamMember />
         <Solution />
