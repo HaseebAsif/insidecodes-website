@@ -26,6 +26,9 @@
     font-size: 15px;
     padding: 13px 25px;
   }
+  .logo {
+    max-width: 100px;
+  }
   .navbar-area .main-nav .navbar .navbar-brand img {
     max-width: 100px;
   }
@@ -1201,6 +1204,9 @@
   .navbar-area .main-nav .navbar {
     padding: 15px 0;
   }
+  .logo {
+    max-width: 115px;
+  }
   .navbar-area .main-nav .navbar .navbar-brand img {
     max-width: 115px;
   }
@@ -1244,6 +1250,9 @@
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .container {
     max-width: 960px;
+  }
+  .logo {
+    max-width: 140px;
   }
   .navbar-area .main-nav .navbar .navbar-brand img {
     max-width: 140px;
@@ -1461,6 +1470,9 @@
   .banner-area.banner-area-four .banner-video {
     top: 25px;
     right: -88px;
+  }
+  .logo {
+    max-width: 170px;
   }
   .navbar-area .main-nav .navbar .navbar-brand img {
     max-width: 170px;
