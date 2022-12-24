@@ -31,7 +31,7 @@ const MainBanner = () => {
               <div className="col-lg-6 col-md-12">
                 <div className="banner-image">
                   <img
-                    style={{ border: "1px solid gray", background: "#eae0d5" }}
+                    style={{ border: "1px solid gray", background: "#294985 " }}
                     src="/images/banner/banner-img.png"
                     alt="Image"
                   />

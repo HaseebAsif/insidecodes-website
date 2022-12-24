@@ -249,7 +249,7 @@ Bg-color Style*/
   background-color: #ffffff;
 }
 .dark-bg {
-  background-color: #000219;
+  background-color: #002d62;
 }
 
 /*
@@ -991,7 +991,7 @@ Navbar Area Style
   z-index: 999;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-  background-color: #000219;
+  background-color: #002d62;
   -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
   animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
 }
@@ -1152,7 +1152,7 @@ Banner Area Style
 
 .banner-area.banner-area-three {
   height: auto;
-  background-color: #000219;
+  background-color: #002d62;
   padding-top: 100px;
   padding-bottom: 170px;
 }
@@ -1343,7 +1343,7 @@ Feature Area Style
 }
 
 .feature-area.feature-area-four .single-feature {
-  background-color: #000219;
+  background-color: #002d62;
 }
 
 .feature-area.feature-area-four .single-feature h3 {
@@ -1355,7 +1355,7 @@ Feature Area Style
 }
 
 .feature-area.feature-area-five .single-feature {
-  background-color: #000219;
+  background-color: #002d62;
 }
 
 .feature-area.feature-area-five .single-feature h3 {
@@ -1449,7 +1449,7 @@ Our Approach Area Style
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000219;
+  background-color: #002d62;
   z-index: -1;
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
@@ -1518,7 +1518,7 @@ Our Approach Area Style
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #000219;
+  background-color: #002d62;
   z-index: -1;
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
@@ -1587,7 +1587,7 @@ Our Approach Area Style
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #000219;
+  background-color: #002d62;
   z-index: -1;
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
@@ -1640,7 +1640,7 @@ Our Approach Area Style
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000219;
+  background-color: #002d62;
   z-index: -1;
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
@@ -1744,13 +1744,13 @@ Our Challenges Area Style
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000219;
+  background-color: #002d62;
   opacity: 0.75;
 }
 
 .challenges-area.challenges-area-two {
   background-image: unset;
-  background-color: #000219;
+  background-color: #002d62;
 }
 
 .challenges-area.challenges-area-two::before {
@@ -2034,7 +2034,7 @@ Get In Touch Area Style
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000219;
+  background-color: #002d62;
   opacity: 0.75;
   z-index: -1;
 }
@@ -2193,7 +2193,7 @@ Protect Area Style
 }
 
 .protect-area.protect-area-four .single-challenges {
-  background-color: #000219;
+  background-color: #002d62;
 }
 
 .protect-area.protect-area-four .single-challenges i {
@@ -2253,7 +2253,7 @@ Testimonials Area Style
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000219;
+  background-color: #002d62;
   opacity: 0.75;
   z-index: -1;
 }
@@ -2522,7 +2522,7 @@ Footer Top Area Style
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000219;
+  background-color: #002d62;
   opacity: 0.95;
   z-index: -1;
 }
@@ -2681,7 +2681,7 @@ Footer Top Area Style
 Copy Right Area Style
 ======================================================*/
 .copy-right-area {
-  background-color: #000219;
+  background-color: #002d62;
   border-top: 1px solid #212437;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -2930,7 +2930,7 @@ Pricing Area Style
   color: #ffffff;
 }
 .single-pricing:hover .default-btn {
-  background-color: #000219;
+  background-color: #002d62;
 }
 .single-pricing:hover .default-btn:hover {
   background-color: #ff5a00;
@@ -2980,7 +2980,7 @@ Counter Area Style
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000219;
+  background-color: #002d62;
   opacity: 0.2;
   z-index: -1;
 }
@@ -3149,7 +3149,7 @@ Team Area Style
 
 .single-team .team-content {
   position: relative;
-  background-color: #000219;
+  background-color: #002d62;
   padding: 20px 30px;
   margin-top: -60px;
   margin-left: 30px;
@@ -3435,7 +3435,7 @@ Page Title Area Style
   overflow: hidden;
   text-align: center;
   z-index: 1;
-  background-color: #000219;
+  background-color: #002d62;
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -3801,7 +3801,7 @@ Coming Soon Area CSS
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000219;
+  background-color: #002d62;
   opacity: 0.9;
   z-index: -1;
 }
@@ -3836,7 +3836,7 @@ Coming Soon Area CSS
 }
 
 .coming-soon-area .coming-soon-content #timer div {
-  background-color: #000219;
+  background-color: #002d62;
   color: #ffffff;
   width: 100px;
   height: 105px;
@@ -5487,7 +5487,7 @@ Checkout Area Style
   left: 0;
   width: 15px;
   height: 15px;
-  background-color: #000219;
+  background-color: #002d62;
   border-radius: 50%;
 }
 
@@ -6476,7 +6476,7 @@ Blog Details Area Style
 }
 
 .sidebar-widget.search .search-form .search-button:hover {
-  background-color: #000219;
+  background-color: #002d62;
 }
 
 .sidebar-widget.recent-post ul li {
@@ -6650,7 +6650,7 @@ Services Details Area Style
 
 .services-sidebar .services-pdf ul li a {
   padding: 20px 30px;
-  background-color: #000219;
+  background-color: #002d62;
   color: #ffffff;
   display: block;
   position: relative;
