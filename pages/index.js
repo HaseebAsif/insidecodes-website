@@ -13,7 +13,7 @@ import Testimonials from "../components/Common/Testimonials";
 import TeamMember from "../components/Common/TeamMember";
 import Services from "../components/HomeDemoOne/Services";
 
-const Index3 = () => {
+const Index = () => {
   return (
     <React.Fragment>
       <div className="bg-f5f7fa">
@@ -38,4 +38,4 @@ const Index3 = () => {
   );
 };
 
-export default Index3;
+export default Index;
