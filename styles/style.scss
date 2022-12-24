@@ -136,7 +136,7 @@ p {
   }
 }
 img {
-  max-width: 100%;
+  max-width: 115px;
   height: auto;
 }
 ul {
@@ -622,7 +622,7 @@ Navbar Area Style
             }
           }
           &:hover {
-            ul {
+            .get-quote ul {
               opacity: 1;
               visibility: visible;
               margin-top: 0;
@@ -633,11 +633,6 @@ Navbar Area Style
     }
   }
   .others-option {
-    .get-quote {
-      display: inline-block;
-      position: relative;
-      top: 3px;
-    }
     .cart-icon {
       top: 0;
       display: inline-block;
@@ -862,9 +857,6 @@ Mobile Navbar Area Style
   }
   .navbar-area {
     .others-option {
-      .get-quote {
-        top: 4.5px;
-      }
       .cart-icon {
         margin-right: 10px;
         margin-left: 20px;
@@ -5707,7 +5699,7 @@ Video wave Style*/
   text-align: center;
   border-radius: 0;
   position: relative;
-  top: 3px;
+
   z-index: 1;
   background-color: rgba(255, 42, 96, 0.9);
   border-radius: 50%;

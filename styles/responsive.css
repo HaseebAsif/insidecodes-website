@@ -26,6 +26,9 @@
     font-size: 15px;
     padding: 13px 25px;
   }
+  .navbar-area .main-nav .navbar .navbar-brand img {
+    max-width: 100px;
+  }
   h3 {
     font-size: 17px;
     line-height: 1.4;
@@ -1242,6 +1245,9 @@
   .container {
     max-width: 960px;
   }
+  .navbar-area .main-nav .navbar .navbar-brand img {
+    max-width: 140px;
+  }
   .navbar-area .others-option .get-quote .default-btn {
     padding: 12px 15px;
   }
@@ -1448,13 +1454,16 @@
 }
 
 /* Max width 1550px */
-@media only screen and (min-width: 1550px) {
+@media only screen and (max-width: 1550px) {
   .banner-area.banner-area-four {
     height: 100vh;
   }
   .banner-area.banner-area-four .banner-video {
     top: 25px;
     right: -88px;
+  }
+  .navbar-area .main-nav .navbar .navbar-brand img {
+    max-width: 170px;
   }
   .banner-area.banner-area-five {
     height: 100vh;
