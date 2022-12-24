@@ -12,7 +12,7 @@ const Custom404 = () => {
               <span className="b">4</span>
             </h1>
             <h3>Oops! Page Not Found</h3>
-            <p>The page you were looking for could not be found.</p>
+            <p>The page you were for could not be found.</p>
 
             <Link href="/">
               <a className="default-btn two">
