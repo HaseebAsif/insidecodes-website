@@ -57,14 +57,14 @@ const Navbar = () => {
               <div className={classOne} id="navbarSupportedContent">
                 <ul className="navbar-nav m-auto">
                   <li className="nav-item">
-                    <Link href="/services-style-one" activeClassName="active">
+                    <Link href="/services" activeClassName="active">
                       <a onClick={toggleNavbar} className="nav-link">
                         Services
                       </a>
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link href="/blog-3" activeClassName="active">
+                    <Link href="/blog" activeClassName="active">
                       <a onClick={toggleNavbar} className="nav-link">
                         Blogs
                       </a>

@@ -13,9 +13,10 @@ const MainBanner = () => {
                   <span className="top-title">World Class Software Agency</span>
                   <h1>Leading the new digital world</h1>
                   <p>
-                    Cyber security is the protection from the theft to protect
-                    of our computer systems and networks or being damaged of our
-                    hardware and software.
+                    FuzionDev aspires to enhance the productivity and growth of
+                    your business by providing 'Smart Solutions' and 'Digitally
+                    Transforming' your business processes by using latest
+                    State-Of-The-Art Technologies
                   </p>
 
                   <div className="banner-btn">

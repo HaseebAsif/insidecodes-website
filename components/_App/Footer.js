@@ -17,9 +17,10 @@ const Footer = () => {
                 </Link>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                  consec tetur adipiscing.
+                  Enhancing the productivity and growth of your business by
+                  providing 'Smart Solutions' and 'Digitally Transforming' your
+                  business processes by using latest State-Of-The-Art
+                  Technologies.
                 </p>
 
                 <ul className="social-icon">
@@ -75,12 +76,12 @@ const Footer = () => {
 
                 <ul className="import-link">
                   <li>
-                    <Link href="/blog-3">
+                    <Link href="/blog">
                       <a>Blog</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="/services-style-one">
+                    <Link href="/services">
                       <a>Our Services</a>
                     </Link>
                   </li>
