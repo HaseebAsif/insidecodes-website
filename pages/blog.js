@@ -3,8 +3,15 @@ import Navbar from "../components/_App/Navbar";
 import PageBanner from "../components/Common/PageBanner";
 import Footer from "../components/_App/Footer";
 import Link from "next/link";
+import useFetch from ".././components/hooks/useFetch";
 
 const Blog = () => {
+  const { loading, error, data } = useFetch(
+    `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/blogs?populate=*`
+  );
+  console.log(data);
+  if (!data) return <p>Loading</p>;
+  if (error) return <p>Error :(</p>;
   return (
     <React.Fragment>
       <Navbar />

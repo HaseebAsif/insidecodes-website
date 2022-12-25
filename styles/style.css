@@ -2814,6 +2814,7 @@ Pricing Area Style
   background-color: #ffffff;
   position: relative;
   z-index: 1;
+  height: 550px;
 }
 
 .single-pricing .pricing-shape {
@@ -2839,6 +2840,10 @@ Pricing Area Style
 .single-pricing .pricing-title h3 {
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .single-pricing .pricing-title h2 {
