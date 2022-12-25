@@ -65,7 +65,10 @@ body.body-color-three {
 .container {
   max-width: 1260px;
 }
-
+.testimonialImage {
+  border-radius: 75px;
+  margin: auto;
+}
 a {
   display: inline-block;
   -webkit-transition: all ease 0.5s;

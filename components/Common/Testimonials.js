@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import dynamic from "next/dynamic";
 const OwlCarousel = dynamic(import("react-owl-carousel3"));
+import useFetch from ".././hooks/useFetch";
 
 const options = {
   items: 1,
@@ -18,31 +19,32 @@ const options = {
 };
 
 const Testimonials = () => {
-  const [display, setDisplay] = React.useState(false);
+  const { loading, error, data } = useFetch(
+    `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/testimonials?populate=*`
+  );
+  console.log(data);
+  if (!data) return <p>Loading</p>;
+  if (error) return <p>Error :(</p>;
 
-  React.useEffect(() => {
-    setDisplay(true);
-  }, []);
   return (
     <div className="testimonials-area ptb-100 jarallax">
       <div className="container">
         <div className="testimonials">
           <span>What our customers say</span>
 
-          {display ? (
-            <OwlCarousel
-              className="testimonials-slide owl-carousel owl-theme"
-              {...options}
-            >
+          <OwlCarousel
+            className="testimonials-slide owl-carousel owl-theme"
+            {...options}
+          >
+            {data?.map((singleData) => (
               <div className="testimonials-item">
-                <i className="flaticon-quote"></i>
-                <p>
-                  “Nam liber tempor cum soluta nobis eleifend option congue
-                  nihil imperdiet doming id quod mazim placerat facer possim
-                  assum. Lorem ipsum dolor sit amet, consectetuer adipiscing
-                  elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-                  dolore magna aliquam erat volutpat.”
-                </p>
+                <img
+                  className="testimonialImage"
+                  style={{ width: "100px", marginBottom: "10px" }}
+                  src={singleData.attributes.image.data.attributes.url}
+                  alt=""
+                />
+                <p>"{singleData.attributes.feedback}"</p>
 
                 <ul>
                   <li>
@@ -62,45 +64,11 @@ const Testimonials = () => {
                   </li>
                 </ul>
 
-                <h3>Jastin Anderson</h3>
-                <span>CEO</span>
+                <h3>{singleData.attributes.name}</h3>
+                <span>{singleData.attributes.title}</span>
               </div>
-
-              <div className="testimonials-item">
-                <i className="flaticon-quote"></i>
-                <p>
-                  “Nam liber tempor cum soluta nobis eleifend option congue
-                  nihil imperdiet doming id quod mazim placerat facer possim
-                  assum. Lorem ipsum dolor sit amet, consectetuer adipiscing
-                  elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-                  dolore magna aliquam erat volutpat.”
-                </p>
-
-                <ul>
-                  <li>
-                    <i className="bx bxs-star"></i>
-                  </li>
-                  <li>
-                    <i className="bx bxs-star"></i>
-                  </li>
-                  <li>
-                    <i className="bx bxs-star"></i>
-                  </li>
-                  <li>
-                    <i className="bx bxs-star"></i>
-                  </li>
-                  <li>
-                    <i className="bx bxs-star"></i>
-                  </li>
-                </ul>
-
-                <h3>Juhon Anderson</h3>
-                <span>Manager</span>
-              </div>
-            </OwlCarousel>
-          ) : (
-            ""
-          )}
+            ))}
+          </OwlCarousel>
         </div>
       </div>
     </div>
