@@ -1,17 +1,17 @@
 import React from "react";
-import MainBanner from "../components/HomeDemo/MainBanner";
-import Features from "../components/HomeDemo/Features";
-import Solution from "../components/HomeDemo/Solution";
-import PriceTableTwo from "../components/Common/PriceTableTwo";
-import WhyChooseUs from "../components/HomeDemo/WhyChooseUs";
-import FaqSection from "../components/HomeDemo/FaqSection";
+import MainBanner from "../components/Home/MainBanner";
+import Features from "../components/Home/Features";
+import Solution from "../components/Home/Solution";
+import PriceTable from "../components/Common/PriceTable";
+import WhyChooseUs from "../components/Home/WhyChooseUs";
+import FaqSection from "../components/Home/FaqSection";
 import Partners from "../components/Common/Partners";
 import LatestNews from "../components/Common/LatestNews";
 import Footer from "../components/_App/Footer";
 import Navbar from "../components/_App/Navbar";
 import Testimonials from "../components/Common/Testimonials";
 import TeamMember from "../components/Common/TeamMember";
-import Services from "../components/HomeDemo/Services";
+import Services from "../components/Home/Services";
 
 const Index = () => {
   return (
@@ -19,13 +19,15 @@ const Index = () => {
       <div className="bg-f5f7fa">
         <Navbar />
         <MainBanner />
-        <Features />
+        <div style={{ marginTop: "-200px" }}>
+          <Features />
+        </div>
         <Partners />
         <Services />
         <TeamMember />
         <Solution />
         <WhyChooseUs />
-        <PriceTableTwo />
+        <PriceTable />
         <Testimonials />
         <FaqSection />
         <div className="bg-white">

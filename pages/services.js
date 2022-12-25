@@ -3,6 +3,7 @@ import Navbar from "../components/_App/Navbar";
 import PageBanner from "../components/Common/PageBanner";
 import Services from "../components/Services/Services";
 import Footer from "../components/_App/Footer";
+import Features from "../components/Home/Features";
 
 const ServicesStyleOne = () => {
   return (
@@ -15,7 +16,9 @@ const ServicesStyleOne = () => {
         activePageText="Services Style One"
       />
 
-      <div className="feature-area feature-area-two pt-100 pb-70">
+      <Features />
+
+      {/* <div className="feature-area feature-area-two pt-100 pb-70">
         <div className="container">
           <div className="row">
             <div className="col-lg-4 col-sm-6">
@@ -76,7 +79,7 @@ const ServicesStyleOne = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <Services />
 

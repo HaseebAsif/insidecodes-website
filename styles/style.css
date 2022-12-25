@@ -1294,7 +1294,7 @@ Feature Area Style
 ======================================================*/
 .feature-area {
   position: relative;
-  margin-top: -130px;
+  margin-top: 50px;
   z-index: 1;
   overflow: hidden;
 }
