@@ -8,25 +8,25 @@ const Layout = ({ children }) => {
     <>
       <TrackingScript />
       <Head>
-        <title>Nezox - React Next Cyber Security Company Template</title>
+        <title>FuzionDev - Software Developers</title>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <meta
-          name="description"
-          content="Nezox - React Next Cyber Security Company Template"
-        />
+        <meta name="description" content="FuzionDev - Software Developers" />
         <meta
           name="og:title"
           property="og:title"
-          content="Nezox - React Next Cyber Security Company Template"
+          content="FuzionDev - Software Developers"
         ></meta>
         <meta
           name="twitter:card"
-          content="Nezox - React Next Cyber Security Company Template"
+          content="FuzionDev - Software Developers"
         ></meta>
-        <link rel="canonical" href="https://nezox-react.envytheme.com/"></link>
+        <link
+          rel="canonical"
+          href="https://FuzionDev-react.envytheme.com/"
+        ></link>
       </Head>
 
       {children}

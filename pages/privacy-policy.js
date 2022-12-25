@@ -18,7 +18,7 @@ const PrivacyPolicy = () => {
         <div className="container">
           <div className="privacy-policy">
             <div className="title">
-              <h2>Nezox Privacy Policy</h2>
+              <h2>FuzionDev Privacy Policy</h2>
               <p>This policy was last updated september 20, 2020.</p>
             </div>
 

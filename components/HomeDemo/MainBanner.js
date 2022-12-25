@@ -10,8 +10,8 @@ const MainBanner = () => {
             <div className="row align-items-center">
               <div className="col-lg-6">
                 <div className="banner-content">
-                  <span className="top-title">World Class Cyber Security</span>
-                  <h1>Cyber Security & IT Management</h1>
+                  <span className="top-title">World Class Software Agency</span>
+                  <h1>Leading the new digital world</h1>
                   <p>
                     Cyber security is the protection from the theft to protect
                     of our computer systems and networks or being damaged of our

@@ -54,7 +54,7 @@ const SolutionDetails = () => {
 
             <div className="col-lg-12">
               <div className="solutions-content two">
-                <h3>Nezox is Changinga The World of Cybersecurity</h3>
+                <h3>FuzionDev is Changinga The World of Cybersecurity</h3>
 
                 <p>
                   Duis autem vel eum iriure dolor in hendrerit in vulputate

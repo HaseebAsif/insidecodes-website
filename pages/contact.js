@@ -45,7 +45,7 @@ const Contact = () => {
                   <li>
                     <i className="bx bxs-envelope"></i>
                     <span>Email</span>
-                    <a href="mailto:hello@nezox.com">hello@nezox.com</a>
+                    <a href="mailto:hello@FuzionDev.com">hello@FuzionDev.com</a>
                     <a href="#">skype: example</a>
                   </li>
                 </ul>
