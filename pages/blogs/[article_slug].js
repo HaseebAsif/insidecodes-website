@@ -1,10 +1,19 @@
 import React from "react";
-import Navbar from "../components/_App/Navbar";
-import BlogSidebar from "../components/Blog/BlogSidebar";
-import Comments from "../components/Blog/Comments";
-import Footer from "../components/_App/Footer";
+import Navbar from "../../components/_App/Navbar";
+import BlogSidebar from "../../components/Blog/BlogSidebar";
+import Comments from "../../components/Blog/Comments";
+import Footer from "../../components/_App/Footer";
+import useFetch from "../../components/hooks/useFetch";
 
-const BlogDetails = () => {
+const singlepost = ({ article_slug }) => {
+  const { loading, error, data } = useFetch(
+    `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/blogs/${
+      article_slug.split("-")[0]
+    }?populate=*`
+  );
+  if (!data) return <div>Loading..</div>;
+  if (error) return <p>Error :(</p>;
+  console.log(data);
   return (
     <React.Fragment>
       <Navbar />
@@ -161,4 +170,11 @@ const BlogDetails = () => {
   );
 };
 
-export default BlogDetails;
+export const getServerSideProps = async ({ params }) => {
+  const article_slug = params.article_slug;
+  return {
+    props: { article_slug },
+  };
+};
+
+export default singlepost;

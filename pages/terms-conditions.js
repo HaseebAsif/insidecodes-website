@@ -1,18 +1,11 @@
 import React from "react";
 import Navbar from "../components/_App/Navbar";
-import PageBanner from "../components/Common/PageBanner";
 import Footer from "../components/_App/Footer";
 
 const TermsConditions = () => {
   return (
     <React.Fragment>
       <Navbar />
-      <PageBanner
-        pageTitle="Terms & Conditions"
-        homePageUrl="/"
-        homePageText="Home"
-        activePageText="Terms & Conditions"
-      />
 
       <div className="terms-conditions-area ptb-100">
         <div className="container">

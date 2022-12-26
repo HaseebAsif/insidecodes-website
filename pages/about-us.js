@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "../components/_App/Navbar";
-import PageBanner from "../components/Common/PageBanner";
 import AboutUsContent from "../components/AboutUs/AboutUsContent";
 import OurChallenges from "../components/Common/OurChallenges";
 import Protects from "../components/AboutUs/Protects";
@@ -12,12 +11,6 @@ const AboutUs = () => {
   return (
     <React.Fragment>
       <Navbar />
-      <PageBanner
-        pageTitle="About Us"
-        homePageUrl="/"
-        homePageText="Home"
-        activePageText="About Us"
-      />
 
       <div className="pt-100 pb-70">
         <AboutUsContent />

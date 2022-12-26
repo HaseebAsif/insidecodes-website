@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "../components/_App/Navbar";
-import PageBanner from "../components/Common/PageBanner";
 import ContactForm from "../components/Contact/ContactForm";
 import Footer from "../components/_App/Footer";
 
@@ -8,12 +7,6 @@ const Contact = () => {
   return (
     <React.Fragment>
       <Navbar />
-      <PageBanner
-        pageTitle="Contact Us"
-        homePageUrl="/"
-        homePageText="Home"
-        activePageText="Contact Us"
-      />
 
       <section className="main-contact-area ptb-100">
         <div className="container">

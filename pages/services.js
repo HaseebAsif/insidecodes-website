@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "../components/_App/Navbar";
-import PageBanner from "../components/Common/PageBanner";
 import Services from "../components/Services/Services";
 import Footer from "../components/_App/Footer";
 import Features from "../components/Home/Features";
@@ -9,12 +8,6 @@ const ServicesStyleOne = () => {
   return (
     <React.Fragment>
       <Navbar />
-      <PageBanner
-        pageTitle="Services Style One"
-        homePageUrl="/"
-        homePageText="Home"
-        activePageText="Services Style One"
-      />
 
       <Features />
 

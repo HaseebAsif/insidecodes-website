@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "../components/_App/Navbar";
-import PageBanner from "../components/Common/PageBanner";
 import RelatedServices from "../components/Services/RelatedServices";
 import ServiceSidebar from "../components/Services/ServiceSidebar";
 import Footer from "../components/_App/Footer";
@@ -9,12 +8,6 @@ const ServicesDetails = () => {
   return (
     <React.Fragment>
       <Navbar />
-      <PageBanner
-        pageTitle="Services Details"
-        homePageUrl="/"
-        homePageText="Home"
-        activePageText="Services Details"
-      />
 
       <div className="services-details-area pt-100 pb-70">
         <div className="container">

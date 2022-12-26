@@ -1,18 +1,11 @@
 import React from "react";
 import Navbar from "../components/_App/Navbar";
-import PageBanner from "../components/Common/PageBanner";
 import Footer from "../components/_App/Footer";
 
 const PrivacyPolicy = () => {
   return (
     <React.Fragment>
       <Navbar />
-      <PageBanner
-        pageTitle="Privacy Policy"
-        homePageUrl="/"
-        homePageText="Home"
-        activePageText="Privacy Policy"
-      />
 
       <div className="privacy-policy-area ptb-100">
         <div className="container">
