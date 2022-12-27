@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import dynamic from "next/dynamic";
 const OwlCarousel = dynamic(import("react-owl-carousel3"));
+import useFetch from "../hooks/useFetch";
 
 const options = {
   loop: true,
@@ -32,55 +33,32 @@ const options = {
 };
 
 const PartnersTwo = () => {
-  const [display, setDisplay] = React.useState(false);
+  const { loading, error, data } = useFetch(
+    `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/partners?populate=*`
+  );
+  console.log(data);
+  if (!data) return <p>Loading</p>;
+  if (error) return <p>Error :(</p>;
 
-  React.useEffect(() => {
-    setDisplay(true);
-  }, []);
   return (
     <div className="partner-area bg-color ptb-100">
       <div className="container">
-        {display ? (
-          <OwlCarousel {...options} className="partner-slide owl-carousel ">
+        <OwlCarousel {...options} className="partner-slide owl-carousel ">
+          {data?.map((singleData) => (
             <div className="partner-item">
-              <a href="#" target="_blank">
-                <img src="/images/partner/partner-1.png" alt="Image" />
+              <a href={singleData.attributes.websiteLink} target="_blank">
+                <img
+                  src={singleData.attributes.logo.data.attributes.url}
+                  alt="Image"
+                />
               </a>
+              {singleData.attributes.name && (
+                <p>{singleData.attributes.name}</p>
+              )}
+              *
             </div>
-
-            <div className="partner-item">
-              <a href="#" target="_blank">
-                <img src="/images/partner/partner-2.png" alt="Image" />
-              </a>
-            </div>
-
-            <div className="partner-item">
-              <a href="#" target="_blank">
-                <img src="/images/partner/partner-3.png" alt="Image" />
-              </a>
-            </div>
-
-            <div className="partner-item">
-              <a href="#" target="_blank">
-                <img src="/images/partner/partner-3.png" alt="Image" />
-              </a>
-            </div>
-
-            <div className="partner-item">
-              <a href="#" target="_blank">
-                <img src="/images/partner/partner-4.png" alt="Image" />
-              </a>
-            </div>
-
-            <div className="partner-item">
-              <a href="#" target="_blank">
-                <img src="/images/partner/partner-5.png" alt="Image" />
-              </a>
-            </div>
-          </OwlCarousel>
-        ) : (
-          ""
-        )}
+          ))}
+        </OwlCarousel>
       </div>
     </div>
   );
