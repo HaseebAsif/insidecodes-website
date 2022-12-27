@@ -12,7 +12,6 @@ const FaqSection = () => {
   const { loading, error, data } = useFetch(
     `${process.env.NEXT_PUBLIC_STRAPI_URL}/api/faqs?populate=*`
   );
-  console.log(data);
   if (!data) return <p>Loading</p>;
   if (error) return <p>Error :(</p>;
   return (

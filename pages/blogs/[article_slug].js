@@ -11,7 +11,6 @@ const singlepost = ({ article_slug }) => {
   );
   if (!data) return <div>Loading..</div>;
   if (error) return <p>Error :(</p>;
-  console.log(data);
   return (
     <React.Fragment>
       <Navbar />
