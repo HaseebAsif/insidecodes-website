@@ -8,7 +8,7 @@ const Footer = () => {
       <footer className="footer-area pt-100 pb-70 jarallax">
         <div className="container">
           <div className="row">
-            <div className="col-lg-3 col-md-6">
+            <div className="col-lg-4  d-flex justify-content-center  col-md-12">
               <div className="single-footer-widget">
                 <Link href="/">
                   <a className="logo">
@@ -25,30 +25,47 @@ const Footer = () => {
 
                 <ul className="social-icon">
                   <li>
-                    <a href="https://www.facebook.com/" target="_blank">
+                    <a
+                      href="https://www.facebook.com/FuzionDEV"
+                      target="_blank"
+                    >
                       <i className="bx bxl-facebook"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/" target="_blank">
+                    <a
+                      href="https://www.instagram.com/fuziondev/?hl=en"
+                      target="_blank"
+                    >
                       <i className="bx bxl-instagram"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.linkedin.com/" target="_blank">
+                    <a
+                      href="https://www.linkedin.com/company/77573908/admin/"
+                      target="_blank"
+                    >
                       <i className="bx bxl-linkedin-square"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://twitter.com/" target="_blank">
+                    <a href="https://twitter.com/dev_fuzion" target="_blank">
                       <i className="bx bxl-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.pinterest.com/FuzionDev/"
+                      target="_blank"
+                    >
+                      <i className="bx bxl-pinterest"></i>
                     </a>
                   </li>
                 </ul>
               </div>
             </div>
 
-            <div className="col-lg-3 col-md-6">
+            <div className="col-lg-4  d-flex justify-content-center  col-md-6">
               <div className="single-footer-widget">
                 <h3>Address</h3>
 
@@ -63,14 +80,15 @@ const Footer = () => {
                   </li>
                   <li>
                     <i className="bx bxs-phone-call"></i>
-                    <a href="tel:+1-(514)-312-5678">+1 (786) 312 4179</a>
-                    <a href="tel:+1-(514)-312-6677">+1 (786) 312 4179</a>
+                    <a href="tel:+92-349-1754334">+92-349-1754334</a>
+                    <a href="tel:+92-303-9239298">+92-303-9239298</a>
+                    <a href="tel:+92-304-5172021">+92-304-5172021</a>
                   </li>
                 </ul>
               </div>
             </div>
 
-            <div className="col-lg-3 col-md-6">
+            <div className="col-lg-4  d-flex justify-content-center  col-md-6">
               <div className="single-footer-widget">
                 <h3>Resources</h3>
 

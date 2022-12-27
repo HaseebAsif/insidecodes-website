@@ -35,121 +35,34 @@ const singlepost = ({ article_slug }) => {
                         <li>
                           <a href="#">
                             <i className="bx bx-user-circle"></i>
-                            Posted by: Carl Bradshaw
+                            Posted by:{" "}
+                            {data.attributes.author.data?.attributes.Name}
                           </a>
                         </li>
 
                         <li>
-                          <a href="#">
-                            <i className="bx bx-comment"></i>
-                            No comments
-                          </a>
+                          <a href="#">{data.attributes.Category}</a>
                         </li>
 
                         <li className="float">
                           <i className="bx bx-calendar-alt"></i>
-                          September 20, 2020
+                          {new Date(
+                            data.attributes.DatePublished
+                          ).toLocaleDateString(undefined, {
+                            year: "numeric",
+                            month: "long",
+                            day: "numeric",
+                          })}
                         </li>
                       </ul>
 
-                      <h3>The essentials of cybersecurity solutions</h3>
+                      <h3>{data.attributes.Title}</h3>
 
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore dolore magna
-                        aliqua. Quis ipsum suspendisse ultrices gravida. Risus
-                        commodo viverra maecenas accumsan lacus vel facilisis
-                        ipsum dolor sit amet, consectetur adipiscing elit, sed
-                        do eiusmod tempo.
-                      </p>
-
-                      <p>
-                        Praesent dapibus, neque id cursus faucibus, tortor neque
-                        egestas auguae, eu vulputate magna eros eu Aliquam erat
-                        volutpat. Nam dui mi, tincidunt quis, accumsan
-                        porttitor, facilisis luctus, metus.
-                      </p>
-                    </div>
-
-                    <blockquote>
-                      <p>
-                        “Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod temporincididunt ut labore dolore
-                        magna aliqua.”
-                      </p>
-                      <i className="bx bxs-quote-alt-left"></i>
-                    </blockquote>
-
-                    <div className="news-content-2">
-                      <p>
-                        Phasellus ultrices nulla quis nibh. Quisque a lectus.
-                        Donec consectetuer ligula vulputate sem tristique Nam
-                        nulla quam, gravida non, commodo a, sodales sit amet,
-                        nisi nulla quis nibh. Quisque a lectus. Lorem ipsum
-                        dolor sit amet, consectetuer adipiscing elit. Donec
-                        odio. Quisque volutpat mattis eros. malesuada erat ut
-                        turpis. Suspendisse urna nibh, viverra non semper
-                        suscipit ultrices nulla quis nibh.
-                      </p>
-                    </div>
-
-                    <div className="row">
-                      <div className="col-lg-6 col-md-6">
-                        <div className="single-blog-post-img">
-                          <img
-                            src="/images/blog-details/blog-1.jpg"
-                            alt="Image"
-                          />
-                        </div>
-                      </div>
-                      <div className="col-lg-6 col-md-6">
-                        <div className="single-blog-post-img">
-                          <img
-                            src="/images/blog-details/blog-2.jpg"
-                            alt="Image"
-                          />
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="news-content-3">
-                      <p>
-                        Phasellus ultrices nulla quis nibh. Quisque a lectus.
-                        Donec consectetuer ligula vulputate sem tristique Nam
-                        nulla quam, gravida non, commodo a, sodales sit amet,
-                        nisi nulla quis nibh. Quisque a lectus. Lorem ipsum
-                        dolor sit amet, consectetuer adipiscing elit. Donec
-                        odio. Quisque volutpat mattis eros. malesuada erat ut
-                        turpis. Suspendisse urna nibh, viverra non semper
-                        suscipit ultrices nulla quis nibh.
-                      </p>
-                    </div>
-
-                    <div className="tag-list">
-                      <span>Tags:</span>
-
-                      <ul>
-                        <li>
-                          <a href="#" target="_blank">
-                            Cybersecurity
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" target="_blank">
-                            Seaacurity
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" target="_blank">
-                            Hackers
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" target="_blank">
-                            Cybercrime
-                          </a>
-                        </li>
-                      </ul>
+                      <p
+                        dangerouslySetInnerHTML={{
+                          __html: data.attributes.Body,
+                        }}
+                      ></p>
                     </div>
                   </div>
                 </div>

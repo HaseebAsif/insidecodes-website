@@ -24,12 +24,6 @@ const BlogCard = ({ singleData }) => {
             </Link>
           </h3>
 
-          <p
-            dangerouslySetInnerHTML={{
-              __html: singleData.attributes.Body,
-            }}
-          ></p>
-
           <ul className="admin">
             <li>
               <a href={`/blogs/${singleData.id}-${singleData.attributes.Slug}`}>
@@ -49,9 +43,9 @@ const BlogCard = ({ singleData }) => {
               )}
             </li>
           </ul>
-          <div className="btn btn-success">
+          <div className="btn btn-success mt-3">
             <Link
-              className="text-white"
+              className="text-whit"
               href={`/blogs/${singleData.id}-${singleData.attributes.Slug}`}
             >
               <p style={{ margin: "0" }}>Read More</p>
