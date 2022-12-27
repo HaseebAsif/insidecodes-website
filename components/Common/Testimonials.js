@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import dynamic from "next/dynamic";
 const OwlCarousel = dynamic(import("react-owl-carousel3"));
 import useFetch from ".././hooks/useFetch";
+import TestimonialCard from "../Cards/TestimonialCard";
 
 const options = {
   items: 1,
@@ -37,36 +38,7 @@ const Testimonials = () => {
             {...options}
           >
             {data?.map((singleData) => (
-              <div className="testimonials-item">
-                <img
-                  className="testimonialImage"
-                  style={{ width: "100px", marginBottom: "10px" }}
-                  src={singleData.attributes.image.data.attributes.url}
-                  alt=""
-                />
-                <p>"{singleData.attributes.feedback}"</p>
-
-                <ul>
-                  <li>
-                    <i className="bx bxs-star"></i>
-                  </li>
-                  <li>
-                    <i className="bx bxs-star"></i>
-                  </li>
-                  <li>
-                    <i className="bx bxs-star"></i>
-                  </li>
-                  <li>
-                    <i className="bx bxs-star"></i>
-                  </li>
-                  <li>
-                    <i className="bx bxs-star"></i>
-                  </li>
-                </ul>
-
-                <h3>{singleData.attributes.name}</h3>
-                <span>{singleData.attributes.title}</span>
-              </div>
+              <TestimonialCard singleData={singleData} />
             ))}
           </OwlCarousel>
         </div>
